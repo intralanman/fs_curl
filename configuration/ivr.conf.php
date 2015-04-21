@@ -64,7 +64,7 @@ class ivr_conf extends fs_configuration {
             $this -> xmlw -> writeAttribute('action', $entries_array[$i]['action']);
             $this -> xmlw -> writeAttribute('digits', $entries_array[$i]['digits']);
             if (!empty($entries_array[$i]['params'])) {
-                $this -> xmlw -> writeAttribute('params', $entries_array[$i]['params']);
+                $this -> xmlw -> writeAttribute('param', $entries_array[$i]['params']);
             }
             $this -> xmlw -> endElement();//</param>
         }
