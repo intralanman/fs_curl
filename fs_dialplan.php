@@ -18,7 +18,12 @@ if (basename($_SERVER['PHP_SELF']) == basename(__FILE__)) {
 class fs_dialplan extends fs_curl {
     private $special_class_file;
 
-    public function fs_dialplan() {
+
+    public function fs_dialplan()
+    {
+        self::__construct();
+    }
+    public function __construct() {
         $this -> fs_curl();
     }
 
