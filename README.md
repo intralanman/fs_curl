@@ -185,7 +185,7 @@ you see this results
 
 
 
-CONGRADULATIONS... XML_CURL with intralan contrib working
+CONGRATULATION... XML_CURL with intralan contrib working
 
 now its your own, how you like to do next
 
