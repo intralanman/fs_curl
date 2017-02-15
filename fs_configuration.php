@@ -21,7 +21,13 @@ class fs_configuration extends fs_curl {
      * This method will instantiate all other objects upon which it relies.
      * @return void
     */
-    function fs_configuration() {
+
+    public function fs_dialplan()
+    {
+        self::__construct();
+    }
+
+    function  __construct() {
         $this -> fs_curl();
         $conf_file = $this->request['key_value'];
         $this->debug("RECEIVED REQUEST FOR $conf_file");

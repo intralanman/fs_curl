@@ -51,7 +51,14 @@
 		 * in child classes
 		 * @return void
 		 */
-		public function fs_curl() {
+		
+		public function fs_curl()
+    		{
+       		 	self::__construct();
+    		}
+	
+		public function __construct() {
+		//public function fs_curl() {
 			openlog( 'fs_curl', LOG_NDELAY | LOG_PID, LOG_USER );
 			header( 'Content-Type: text/xml' );
 			$this->generate_request_array();

@@ -10,8 +10,7 @@
 /**
  * define for the time that execution of the script started
  */
-define('START_TIME', ereg_replace('^0\.([0-9]+) ([0-9]+)$', '\2.\1', microtime()));
-
+define('START_TIME', preg_replace('/^0\.(\d+) (\d+)$/', '\2.\1', microtime()));
 /**
  * Pre-Class initialization die function
  * This function should be called on any

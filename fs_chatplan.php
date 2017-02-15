@@ -18,6 +18,10 @@
 		private $special_class_file;
 
 		public function fs_chatplan() {
+        		self::__construct();
+    		}
+
+		public function  __construct() {
 			$this -> fs_curl();
 		}
 

@@ -26,6 +26,10 @@
 		private $users_gateway_params;
 
 		public function fs_directory() {
+        		self::__construct();
+    		}
+	
+		public function __construct() {
 			$this->fs_curl();
 			if ( array_key_exists( 'user', $this->request ) ) {
 				$this->user = $this->request['user'];
